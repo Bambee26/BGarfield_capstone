@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.impute import SimpleImputer
-from tabulate import tabulate
 
 def handle_missing_data(input_csv_file_path, output_cleaned_csv_file_path, output_missing_csv_file_path):
     # Load the CSV file into a DataFrame
@@ -44,15 +43,57 @@ def handle_missing_data(input_csv_file_path, output_cleaned_csv_file_path, outpu
     
     return output_cleaned_csv_file_path, output_missing_csv_file_path
 
+# Example usage
 input_csv_file_path = 'data.csv'
 output_cleaned_csv_file_path = 'cleaned_data.csv'
 output_missing_csv_file_path = 'missing_data.csv'
 cleaned_file, missing_file = handle_missing_data(input_csv_file_path, output_cleaned_csv_file_path, output_missing_csv_file_path)
 
-# Display the cleaned DataFrame in a table format
-cleaned_df = pd.read_csv(cleaned_file)
-print(tabulate(cleaned_df.head(), headers='keys', tablefmt='pretty'))
-
 # Output the paths to the cleaned and missing CSV files
 print(f"Cleaned data is saved in: {cleaned_file}")
 print(f"Rows with missing data are saved in: {missing_file}")
+
+import pandas as pd
+
+def identify_outliers_iqr(df):
+    """
+    Identify outliers using the Interquartile Range (IQR) method.
+    
+    Parameters:
+    - df: Pandas DataFrame
+    
+    Returns:
+    - outliers: Dictionary where keys are column names and values are lists of outlier indices
+    """
+    outliers = {}
+    
+    # Calculate Q1 (25th percentile) and Q3 (75th percentile) for each column
+    Q1 = df.quantile(0.25)
+    Q3 = df.quantile(0.75)
+    
+    # Calculate IQR for each column
+    IQR = Q3 - Q1
+    
+    # Define threshold for outliers (typically 1.5 times the IQR)
+    threshold = 1.5
+    
+    # Identify outliers for each column
+    for col in df.columns:
+        lower_bound = Q1[col] - threshold * IQR[col]
+        upper_bound = Q3[col] + threshold * IQR[col]
+        outliers[col] = df[(df[col] < lower_bound) | (df[col] > upper_bound)].index.tolist()
+    
+    return outliers
+
+# Example usage
+input_csv_file = 'cleaned_data.csv'
+df = pd.read_csv(input_csv_file)
+
+# Identify outliers using IQR method
+outliers = identify_outliers_iqr(df)
+
+# Display outliers found
+for col, idx in outliers.items():
+    print(f"Outliers in column '{col}':")
+    print(df.loc[idx])
+    print("\n")
