@@ -8,3 +8,4 @@ install tabulate
 install numpy
 install matplotlib
 install seaborn
+install jupyter
