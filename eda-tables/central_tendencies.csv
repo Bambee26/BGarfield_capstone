@@ -1,0 +1,10 @@
+Feature,Mean,Median,Mode
+radius_mean,14.127,13.37,12.34
+texture_mean,19.29,18.84,14.93
+perimeter_mean,91.969,86.24,82.61
+area_mean,654.889,551.1,512.2
+smoothness_mean,0.096,0.096,0.101
+compactness_mean,0.104,0.093,0.115
+concavity_mean,0.089,0.062,0.0
+concave points_mean,0.049,0.034,0.0
+symmetry_mean,0.181,0.179,0.16

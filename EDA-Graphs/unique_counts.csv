@@ -1,11 +1,3 @@
-,0
-diagnosis,2
-radius_mean,456
-texture_mean,479
-perimeter_mean,522
-area_mean,539
-smoothness_mean,474
-compactness_mean,537
-concavity_mean,537
-concave points_mean,542
-symmetry_mean,432
+diagnosis,count
+0,357
+1,212
