@@ -27,7 +27,7 @@ The final report has been written using LaTex in Overleaf, which can be accessed
     - In a new terminal, run:
     ```sh
     python -m venv .venv
-    - Activate virtual environment, run:
+- Activate virtual environment, run:
     ```sh
     .venv\Scripts\Activate
 - VS Code dependencies are listed in the `requirements.txt` file. To install, run:
