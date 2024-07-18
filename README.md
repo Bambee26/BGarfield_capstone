@@ -24,8 +24,12 @@ The final report has been written using LaTex in Overleaf, which can be accessed
 - All code is located in our [GitHub Repo](https://github.com/Bambee26/capstone_project).
 - To use the GitHub repo, fork and clone into VS Code.
 - Execute a virtual environment:
-    - In a new terminal, run python -m venv .venv
-    - Activate virtual environment, run .venv\Scripts\Activate
+    - In a new terminal, run:
+    ```sh
+    python -m venv .venv
+    - Activate virtual environment, run:
+    ```sh
+    .venv\Scripts\Activate
 - VS Code dependencies are listed in the `requirements.txt` file. To install, run:
   ```sh
   pip install -r requirements.txt
