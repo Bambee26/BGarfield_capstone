@@ -23,27 +23,16 @@ The final report has been written using LaTex in Overleaf, which can be accessed
 ### Data Processing
 - All code is located in our [GitHub Repo](https://github.com/Bambee26/capstone_project).
 - To use the GitHub repo, fork and clone into VS Code.
+- Execute a virtual environment:
+    - In a new terminal, run python -m venv .venv
+    - Activate virtual environment, run .venv\Scripts\Activate
 - VS Code dependencies are listed in the `requirements.txt` file. To install, run:
   ```sh
   pip install -r requirements.txt
 
 - EDA process includes indentifying central tendencies, dispersion, and shape of the distribution analyzed. Tables, pie charts, histograms and a heat map were created here to visualize data distribution by diagnosis. ​
 
+### Machine Learning
 
-Machine Learning
+TBD
 
-Machine learning code and results available on GitHub. ​
-
-Results
-
-Results to be documented using Overleaf. ​
-
-Limitations
-
-No specific limitations mentioned in the document.
-
-Conclusion
-
-No specific conclusion provided in the document.
-
-For further details, refer to the document sections and tables provided.
