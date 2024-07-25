@@ -2,7 +2,6 @@
 #### Author: Bambee M. Garfield
 #### Institution: Northwest Missouri State University, Maryville MO 64468, USA
 #### Contact: s565741@nwmissouri.edu
-#### Abstract: Abstract to be completed at the end of the project
 
 ### Introduction
 - Breast cancer statistics in the US, including incidence rates, survival rates, and impact.
@@ -43,7 +42,6 @@ The final report has been written using LaTex in Overleaf, which can be accessed
 
 4. Machine Learning
 
-Machine learning code is located in Machine_Learning_Models.ipynb. There are 6 models, each in separate code sections so that each can be run independently. Make sure you have activated the virtual environment as described above and run the requirements text file. 
-
-Final results are compiled in a table at the end of the code in the Jupyter Notebook. 
+- Machine learning code is located in Machine_Learning_Models.ipynb. There are 6 models, each in separate code sections so that each can be run independently. Make sure you have activated the virtual environment as described above and run the requirements text file. 
+- Final results are compiled in a table at the end of the code in the Jupyter Notebook. 
 
