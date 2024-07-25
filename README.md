@@ -16,11 +16,13 @@
 ### Final Report
 The final report has been written using LaTex in Overleaf, which can be accessed [here](https://www.overleaf.com/read/mnxndtrqqwyk#7112d5).
 
-### Dataset
+### Project Steps
+
+1. Download dataset
 - Dataset extracted from [Kaggle.com](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data), originally from the University of Wisconsin Hospitals, Madison.
 - Dataset includes 30 features from fine needle aspirations (FNA) of 569 breast masses.
 
-### Data Processing
+2. Data Processing
 - All code is located in our [GitHub Repo](https://github.com/Bambee26/capstone_project).
 - To use the GitHub repo, fork and clone into VS Code.
 - Execute a virtual environment:
@@ -33,10 +35,15 @@ The final report has been written using LaTex in Overleaf, which can be accessed
 - VS Code dependencies are listed in the `requirements.txt` file. To install, run:
   ```sh
   pip install -r requirements.txt
+- Clean data - run the cleaning_data file, which will produce an updated_data.csv file for use and a missing_data.csv file for any rows that had missing data
 
+3. Exploratory Data Analysis
+- Run all files in the EDA-Jupyter.ipynb file
 - EDA process includes indentifying central tendencies, dispersion, and shape of the distribution analyzed. Tables, pie charts, histograms and a heat map were created here to visualize data distribution by diagnosis. ​
 
-### Machine Learning
+4. Machine Learning
 
-TBD
+Machine learning code is located in Machine_Learning_Models.ipynb. There are 6 models, each in separate code sections so that each can be run independently. Make sure you have activated the virtual environment as described above and run the requirements text file. 
+
+Final results are compiled in a table at the end of the code in the Jupyter Notebook. 
 
