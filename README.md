@@ -39,7 +39,7 @@ The final report has been written using LaTex in Overleaf, which can be accessed
 3. Exploratory Data Analysis
 - Run all files in the EDA-Jupyter.ipynb file
 - EDA process includes indentifying central tendencies, dispersion, and shape of the distribution analyzed. Tables, pie charts, histograms and a heat map were created here to visualize data distribution by diagnosis. ​
-![alt text](Central_Tendencies.png)
+![alt text](EDA-Graphs\Central_Tendencies.png)
 ![alt text](correlation_heatmap.png)
 ![alt text](histograms.png)
 
